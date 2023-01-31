@@ -39,6 +39,7 @@ public abstract class ConsoleInput {
      */
     public static Long getLongIntPosByRange(String message, Long min, Long max) {
         long num;
+        if (min > max) { num = min; min = max; max = num; }
         while(true) {
             System.out.print(message);
             try {
