@@ -47,3 +47,13 @@ Otras funciones de apoyo implementadas son:
 Se genera la documentación de la aplicación con `JavaDoc` en la carpeta doc.
 
 Se incluye `CHANGELOG.md` con los cambios de versión.
+
+## Licencias
+
+Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE)
+
+## Saber más
+
+Artículos informativos elaborados por el autor relacionados con esta práctica:
+
+- [Creando una clase básica con métodos para lectura de datos por consola en Java](https://javguerra.github.io/2023-01-31-clase-scanner-java/)  
