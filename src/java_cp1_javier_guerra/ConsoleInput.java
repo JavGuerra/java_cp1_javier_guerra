@@ -71,7 +71,8 @@ public abstract class ConsoleInput {
                 IN.nextLine();
                 continue;
             }
-            if (str.trim().length() >= 3) return str.trim();
+            str = str.trim();
+            if (str.length() >= 3) return str;
             System.out.println("Cadena no válida.");
         }
     }
