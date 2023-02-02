@@ -90,8 +90,7 @@ public class Artist {
         long id = getLongIntPos("Introduzca el ID del medio a mostrar: ");
         if (id > 0) {
             Media media = getMediaById(id);
-            if (media == null) System.out.println("No se ha encontrado el medio.");
-            else System.out.println(media);
+            System.out.println(media != null ? media : "No se ha encontrado el medio.");
         }
     }
 
@@ -193,8 +192,7 @@ public class Artist {
                     }
                 }
 
-                if (changes) System.out.println("Cambios finalizados.");
-                else System.out.println("No se han realizado cambios.");
+                System.out.println(changes ? "Cambios finalizados." : "No se han realizado cambios.");
             }
         }
     }
