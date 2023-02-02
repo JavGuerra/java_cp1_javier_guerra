@@ -26,8 +26,7 @@ public enum MediaFormat {
         } else if (type.trim().equalsIgnoreCase("Digital")) {
             System.out.println("Formatos digitales (1) CD, (2) Lista de reproducción");
             byte opt = getLongIntPosByRange("Elija un formato: ", 1L, 2L).byteValue();
-            if (opt == 1) mediaFormat = CD;
-            else mediaFormat = PLAY_LIST;
+            mediaFormat = (opt == 1) ? CD : PLAY_LIST;
         } else {
             mediaFormat = PLAY_LIST;
         }
