@@ -1,4 +1,7 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.interfaces;
+
+import java_cp1_javier_guerra.entities.Song;
+import java_cp1_javier_guerra.entities.MediaFormat;
 
 import java.util.Set;
 

@@ -1,31 +1,31 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.entities;
 
 import java.util.Set;
 
-public class AnalogMedia extends Media {
+public class DigitalMedia extends Media {
 
-    private String speed; // rpm u otros
+    private String compressionFormat; // codec u otros
 
-    public AnalogMedia() {}
+    public DigitalMedia() {}
 
-    public AnalogMedia(Long mediaId, Long artistId, String title, MediaFormat format, Set<Song> songs, String speed) {
+    public DigitalMedia(Long mediaId, Long artistId, String title, MediaFormat format, Set<Song> songs, String compressionFormat) {
         super(mediaId, artistId, title, format, songs);
-        this.setSpeed(speed);
+        this.setCompressionFormat(compressionFormat);
     }
 
-    public String getSpeed() {
-        return speed;
+    public String getCompressionFormat() {
+        return compressionFormat;
     }
 
-    public void setSpeed(String speed) {
-        this.speed = speed;
+    public void setCompressionFormat(String compressionFormat) {
+        this.compressionFormat = compressionFormat;
     }
 
     @Override
     public String toString() {
         Integer numberOfSongs = getNumberOfSongs();
         StringBuilder str = new StringBuilder(getMediaId() + ". «" + getTitle() + "», " + getFormat() + "\n" +
-                "Velocidad de reproducción: " + speed + "\n");
+                "Formato de compresión: " + compressionFormat + "\n");
         if (numberOfSongs > 0) {
             str.append("Canciones:");
             for (Song song : getSongs()) str.append("\n- ").append(song);

@@ -1,6 +1,8 @@
 package java_cp1_javier_guerra;
 
-import static java_cp1_javier_guerra.ConsoleInput.*;
+import java_cp1_javier_guerra.entities.Artist;
+
+import static java_cp1_javier_guerra.utils.ConsoleInput.*;
 
 public class Main {
 

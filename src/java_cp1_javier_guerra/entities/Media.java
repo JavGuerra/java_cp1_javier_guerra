@@ -1,4 +1,6 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.entities;
+
+import java_cp1_javier_guerra.interfaces.MediaInterface;
 
 import java.util.HashSet;
 import java.util.Objects;

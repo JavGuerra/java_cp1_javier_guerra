@@ -6,8 +6,8 @@ Tema de libre elección: Discografía
 
 __Autor__: Javier Guerra  
 __Status__: Finalizado  
-__Versión__: 1.0.4  
-__Fecha__: 2023-01-28
+__Versión__: 1.0.5  
+__Fecha__: 2023-02-09
 
 La aplicación gestiona la discografía de un artista musical dado (`Artist`). Cada artista tiene una discografía de distintos tipos de medios (`Analog`, `Digital`). Cada tipo de medio puede tener distintos formatos (_enum_ `MediaFormat`).
 

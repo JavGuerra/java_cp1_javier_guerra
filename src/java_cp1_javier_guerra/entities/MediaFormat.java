@@ -1,6 +1,6 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.entities;
 
-import static java_cp1_javier_guerra.ConsoleInput.getLongIntPosByRange;
+import static java_cp1_javier_guerra.utils.ConsoleInput.getLongIntPosByRange;
 
 public enum MediaFormat {
     DOUBLE_ALBUM, LP, SINGLE, CD, CASSETTE, CARTRIDGE, PLAY_LIST;

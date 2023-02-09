@@ -1,11 +1,13 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.entities;
+
+import java_cp1_javier_guerra.utils.ConsoleInput;
 
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import static java_cp1_javier_guerra.ConsoleInput.*;
-import static java_cp1_javier_guerra.MediaFormat.getMediaFormat;
+import static java_cp1_javier_guerra.utils.ConsoleInput.*;
+import static java_cp1_javier_guerra.entities.MediaFormat.getMediaFormat;
 
 public class Artist {
 

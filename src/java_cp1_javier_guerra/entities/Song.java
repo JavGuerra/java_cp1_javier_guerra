@@ -1,4 +1,4 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.entities;
 
 import java.util.Objects;
 

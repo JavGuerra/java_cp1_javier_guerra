@@ -1,5 +1,9 @@
 # Cambios en Discografía
 
+## 1.0.5 - 2023-02-09
+
+- Refactorización de paquetes.
+
 ## 1.0.4 - 2023-01-29
 
 - Movido el método getMediaFormat() a la clase enum MediaFormat.

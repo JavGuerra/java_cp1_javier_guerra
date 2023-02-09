@@ -1,5 +1,7 @@
 package java_cp1_javier_guerra;
 
+import java_cp1_javier_guerra.entities.*;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

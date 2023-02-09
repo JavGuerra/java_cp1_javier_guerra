@@ -1,4 +1,4 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.entities;
 
 public enum MusicGenre {
     // https://research.google.com/audioset/ontology/music_genre_1.html
