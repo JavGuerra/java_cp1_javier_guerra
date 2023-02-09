@@ -1,14 +1,11 @@
 package java_cp1_javier_guerra;
 
-import java_cp1_javier_guerra.entities.Artist;
-
+import static java_cp1_javier_guerra.MenuOptions.*;
 import static java_cp1_javier_guerra.utils.ConsoleInput.*;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        Artist artist = ExampleData.exampleArtist();
 
         byte opt;
         String menu = """
@@ -24,6 +21,7 @@ public class Main {
             0. Salir
             """;
 
+        clearConsole();
         System.out.println(menu);
 
         while (true) {
@@ -32,12 +30,12 @@ public class Main {
             if (opt == 0) break;
 
             switch (opt) {
-                case 1 -> { title("Listar todos los medios");       artist.showMediaList();     }
-                case 2 -> { title("Buscar un medio por su id");     artist.showMediaById();     }
-                case 3 -> { title("Buscar los medios por su tipo"); artist.showMediaByFormat(); }
-                case 4 -> { title("Crear un nuevo medio");          artist.createNewMedia();    }
-                case 5 -> { title("Actualizar un medio por su id"); artist.updateMediaById();   }
-                case 6 -> { title("Borrar un medio por su id");     artist.deleteMediaById();   }
+                case 1 -> showMediaList();
+                case 2 -> showMediaById();
+                case 3 -> showMediaByFormat();
+                case 4 -> createNewMedia();
+                case 5 -> updateMediaById();
+                case 6 -> deleteMediaById();
             }
 
             System.out.println("\nPulse <Intro> para continuar.");
@@ -49,13 +47,5 @@ public class Main {
 
         closeScanner();
         System.out.println("La aplicación ha finalizado.");
-    }
-
-    /**
-     * Muestra un texto subrayado como un título.
-     * @param title String Título
-     */
-    private static void title(String title) {
-        System.out.println("\n" + title + "\n" + "-".repeat(title.length()));
     }
 }

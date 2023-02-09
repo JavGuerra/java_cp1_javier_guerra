@@ -121,4 +121,12 @@ public abstract class ConsoleInput {
     public static void closeScanner() {
         IN.close();
     }
+
+    /**
+     * Muestra un texto subrayado como un título.
+     * @param title Título
+     */
+    public static void title(String title){
+        System.out.println("\n" + title + "\n" + "─".repeat(title.length()));
+    }
 }

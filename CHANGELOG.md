@@ -2,6 +2,8 @@
 
 ## 1.0.5 - 2023-02-09
 
+- Añadido el servicio MediaServide y su implementación.
+- Añadido MenuOptions.
 - Refactorización de paquetes.
 
 ## 1.0.4 - 2023-01-29
