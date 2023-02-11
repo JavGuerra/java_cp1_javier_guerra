@@ -8,6 +8,11 @@ public class DigitalMedia extends Media {
 
     public DigitalMedia() {}
 
+    public DigitalMedia(Long mediaId, Long artistId, String title, MediaFormat format, String compressionFormat) {
+        super(mediaId, artistId, title, format);
+        this.setCompressionFormat(compressionFormat);
+    }
+
     public DigitalMedia(Long mediaId, Long artistId, String title, MediaFormat format, Set<Song> songs, String compressionFormat) {
         super(mediaId, artistId, title, format, songs);
         this.setCompressionFormat(compressionFormat);

@@ -8,6 +8,11 @@ public class AnalogMedia extends Media {
 
     public AnalogMedia() {}
 
+    public AnalogMedia(Long mediaId, Long artistId, String title, MediaFormat format, String speed) {
+        super(mediaId, artistId, title, format);
+        this.setSpeed(speed);
+    }
+
     public AnalogMedia(Long mediaId, Long artistId, String title, MediaFormat format, Set<Song> songs, String speed) {
         super(mediaId, artistId, title, format, songs);
         this.setSpeed(speed);

@@ -11,9 +11,16 @@ public abstract class Media implements MediaInterface {
     private String title;
     private MediaFormat format;
     private Set<Song> songs = new HashSet<>();
-    private Integer numberOfSongs;
+    private Integer numberOfSongs = 0;
 
     public Media() {}
+
+    public Media(Long mediaId, Long artistId, String title, MediaFormat format) {
+        this.setMediaId(mediaId);
+        this.setArtistId(artistId);
+        this.setTitle(title);
+        this.setFormat(format);
+    }
 
     public Media(Long mediaId, Long artistId, String title, MediaFormat format, Set<Song> songs) {
         this.setMediaId(mediaId);
