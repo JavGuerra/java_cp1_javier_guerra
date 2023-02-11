@@ -1,6 +1,7 @@
 package java_cp1_javier_guerra.services;
 
-import java_cp1_javier_guerra.ExampleData;
+import java_cp1_javier_guerra.entities.Artist;
+import java_cp1_javier_guerra.repositories.ArtistRepository;
 import java_cp1_javier_guerra.entities.Media;
 
 import java.util.HashSet;
@@ -9,32 +10,32 @@ import java.util.Set;
 
 public class MediaServiceImpl implements MediaService {
 
-    private Long artistId = ExampleData.exampleArtist().getArtistId();
-    private Set<Media> discography = ExampleData.exampleArtist().getDiscography();
+    private final Artist artist = new ArtistRepository().getArtist();
 
     @Override
     public Long getArtistId() {
-        return artistId;
+        return artist.getArtistId();
     }
+
     @Override
     public void setArtistId(Long artistId) {
-        this.artistId = artistId;
+        artist.setArtistId(artistId);
     }
 
     @Override
     public Set<Media> getDiscography() {
-        return discography;
+        return artist.getDiscography();
     }
 
     @Override
     public void setDiscography(Set<Media> discography) {
-        this.discography = discography;
+        artist.setDiscography(discography);
     }
 
     @Override
     public Optional<Media> getMediaById(Long id) {
-        if (discography.size() > 0)
-            for (Media media : discography)
+        if (artist.getDiscography().size() > 0)
+            for (Media media : artist.getDiscography())
                 if (media.getMediaId().equals(id)) return Optional.of(media);
         return Optional.empty();
     }
@@ -42,18 +43,18 @@ public class MediaServiceImpl implements MediaService {
     @Override
     public Set<Media> getDiscographyByFormat(String mediaFormat) {
         Set<Media> mediaList = new HashSet<>();
-        for (Media media : discography)
+        for (Media media : artist.getDiscography())
             if (media.getClass().getSimpleName().equals(mediaFormat)) mediaList.add(media);
         return mediaList;
     }
 
     @Override
     public boolean createNewMedia(Media media) {
-        return discography.add(media);
+        return artist.addNewMedia(media);
     }
 
     @Override
     public boolean deleteMedia(Media media) {
-        return discography.remove(media);
+        return artist.deleteMedia(media);
     }
 }

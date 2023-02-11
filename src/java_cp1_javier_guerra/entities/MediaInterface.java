@@ -1,8 +1,5 @@
 package java_cp1_javier_guerra.entities;
 
-import java_cp1_javier_guerra.entities.Song;
-import java_cp1_javier_guerra.entities.MediaFormat;
-
 import java.util.Set;
 
 public interface MediaInterface {

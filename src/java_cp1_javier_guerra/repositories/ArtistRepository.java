@@ -1,4 +1,4 @@
-package java_cp1_javier_guerra;
+package java_cp1_javier_guerra.repositories;
 
 import java_cp1_javier_guerra.entities.*;
 
@@ -7,9 +7,23 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public abstract class ExampleData {
+public final class ArtistRepository {
 
-    public static Artist exampleArtist() {
+    private Artist artist;
+
+    public ArtistRepository() {
+        setArtist(exampleArtist());
+    }
+
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    private Artist exampleArtist() {
         Artist artist = new Artist(1L, "Artista");
         Long artistId = artist.getArtistId();
 
@@ -29,7 +43,7 @@ public abstract class ExampleData {
         return artist;
     }
 
-    public static List<Song> exampleSongs(Long artistId) {
+    private List<Song> exampleSongs(Long artistId) {
         Song song1 = new Song(1L, artistId, "Canción_1", 120, MusicGenre.BLUES);
         Song song2 = new Song(2L, artistId, "Canción_2", 260, MusicGenre.CLASSICAL);
         Song song3 = new Song(3L, artistId, "Canción_3", 132, MusicGenre.FOLK);

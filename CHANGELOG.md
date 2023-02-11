@@ -1,8 +1,9 @@
 # Cambios en Discografía
 
-## 1.0.5 - 2023-02-09
+## 1.0.5 - 2023-02-10
 
-- Añadido el servicio MediaServide y su implementación.
+- Añadido el servicio MediaService y su implementación.
+- Añadido el repositorio ArtistRepository.
 - Añadido MenuOptions.
 - Refactorización de paquetes.
 

@@ -1,13 +1,8 @@
 package java_cp1_javier_guerra.entities;
 
-import java_cp1_javier_guerra.utils.ConsoleInput;
-
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-
-import static java_cp1_javier_guerra.utils.ConsoleInput.*;
-import static java_cp1_javier_guerra.entities.MediaFormat.getMediaFormat;
 
 public class Artist {
 
@@ -52,8 +47,12 @@ public class Artist {
         this.discography = discography;
     }
 
-    public void addNewMedia(Media media) {
-        this.discography.add(media);
+    public boolean addNewMedia(Media media) {
+        return discography.add(media);
+    }
+
+    public boolean deleteMedia(Media media) {
+        return discography.remove(media);
     }
 
     public void addNewMedias(Set<Media> medias) {

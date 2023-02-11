@@ -19,7 +19,7 @@ Las clases `Analog` y `Digital` sobreescriben los métodos `equals()`, `hashCode
 
 Se implementa un servicio de gestión de medios de un artista (`MediaServiceImpl`) y su interfaz (`M̀ediaService`) que es accedido desde la clase `MenuOptions` que contiene los métodos relacionados con las opciones del menú de la aplicación.
 
-Se utiliza una estructura de datos como base de datos en memoria (`HashSet`). Los datos iniciales de ejemplo se aprovisionan en la clase `ExampleData` que es usada por el servicio `MediaServiceImpl`. 
+Se utiliza una estructura de datos como base de datos en memoria (`HashSet`). Los datos iniciales de ejemplo se aprovisionan en la clase `ArtistRepository` que es usada por el servicio `MediaServiceImpl`. 
 
 La aplicación ofrece las siguientes opciones de menú por consola y solicita datos al usuario que son leídos usando la clase `Scanner`:
 

@@ -1,8 +1,12 @@
 package java_cp1_javier_guerra;
 
-import static java_cp1_javier_guerra.MenuOptions.*;
+import static java_cp1_javier_guerra.controllers.MediaController.*;
 import static java_cp1_javier_guerra.utils.ConsoleInput.*;
 
+/**
+ * Menú principal de la aplicación
+ * @author or Javier Guerra
+ */
 public class Main {
 
     public static void main(String[] args) {
