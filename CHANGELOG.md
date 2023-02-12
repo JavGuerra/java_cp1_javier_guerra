@@ -1,16 +1,16 @@
 # Cambios en Discografía
 
-## 1.0.5 - 2023-02-10
+## 1.0.5 - 2023-02-12
 
 - Añadido el servicio MediaService y su implementación.
 - Añadido el repositorio ArtistRepository.
-- Añadido MenuOptions.
+- Movida la clase MenuOptions al controlador MediaController.
 - Refactorización de paquetes.
 
 ## 1.0.4 - 2023-01-29
 
 - Movido el método getMediaFormat() a la clase enum MediaFormat.
-- Movidos los métodos de Menú de la clase Main a la clase Artist.
+- Movidos los métodos de Menú de la clase Main a la clase ManuOptions.
 - Añadido el método getMediaById() a la clase Artist;
 - Añadido el método title() a la clase Main.
 
@@ -33,4 +33,4 @@
 
 ## 1.0.0 - 2023-01-26
 
-- Primera versión.
+- Primera versión operativa.

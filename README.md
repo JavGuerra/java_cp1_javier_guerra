@@ -7,7 +7,7 @@ Tema de libre elección: Discografía
 __Autor__: Javier Guerra  
 __Status__: Finalizado  
 __Versión__: 1.0.5  
-__Fecha__: 2023-02-09
+__Fecha__: 2023-02-12
 
 La aplicación gestiona la discografía de un artista musical dado (`Artist`). Cada artista tiene una discografía de distintos tipos de medios (`Analog`, `Digital`). Cada tipo de medio puede tener distintos formatos (_enum_ `MediaFormat`).
 
@@ -21,7 +21,9 @@ Se implementa un servicio de gestión de medios de un artista (`MediaServiceImpl
 
 Se utiliza una estructura de datos como base de datos en memoria (`HashSet`). Los datos iniciales de ejemplo se aprovisionan en la clase `ArtistRepository` que es usada por el servicio `MediaServiceImpl`. 
 
-La aplicación ofrece las siguientes opciones de menú por consola y solicita datos al usuario que son leídos usando la clase `Scanner`:
+La aplicación ofrece un menú por consola cuyas opciones son implementadas en `M̀ediaController`, y solicita datos al usuario que son leídos mediante la clase `Scanner` que es usada en la clase `ConsoleInput`:
+
+Opciones del menú:
 
 1. Listar todos los medios  
 2. Buscar un medio por su id  
@@ -40,7 +42,7 @@ Se han creado funciones de apoyo a las opciones de menú para lectura por consol
 - Obtener la pulsación de la tecla Intro
 - Imprimir un título (Main)
 
-Otras funciones de apoyo están implementadas en `MenuOptions` y en `MediaServiceImpl`:
+Otras funciones de apoyo están implementadas en `MediaController` y en `MediaServiceImpl`:
 
 Se genera la documentación de la aplicación con `JavaDoc` en la carpeta doc.
 
