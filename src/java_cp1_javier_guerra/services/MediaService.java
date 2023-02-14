@@ -7,6 +7,8 @@ import java.util.Set;
 
 public interface MediaService {
 
+    Long newMediaId();
+
     Long getArtistId();
 
     void setArtistId(Long artistId);

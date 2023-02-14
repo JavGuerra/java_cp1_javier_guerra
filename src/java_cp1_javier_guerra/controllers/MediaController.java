@@ -14,22 +14,6 @@ public abstract class MediaController {
     private static final MediaService mediaService = new MediaServiceImpl();
 
     /**
-     * Genera un nuevo identificador de medios que corresponde con el valor máximo de ID existente + 1.
-     * @return Long nuevo ID
-     */
-    private static Long newMediaId() {
-        Set<Media> discography = mediaService.getDiscography();
-        Long max = 0L;
-        if (discography.size() > 0) {
-            for (Media media : discography) {
-                Long mediaId = media.getMediaId();
-                if (mediaId > max) max = mediaId;
-            }
-        }
-        return ++max;
-    }
-
-    /**
      * Lista un resumen (id título, número de canciones, formato) de la lista de medios de la discografía del artista.
      */
     public static void showMediaList() {
@@ -90,7 +74,7 @@ public abstract class MediaController {
             mediaFormat = getMediaFormat("Digital");
             ((DigitalMedia) media).setCompressionFormat(getString("Introduzca el formato de compresión: "));
         }
-        Long mediaId = newMediaId();
+        Long mediaId = mediaService.newMediaId();
         media.setMediaId(mediaId);
         media.setArtistId(mediaService.getArtistId());
         media.setTitle(title);

@@ -12,6 +12,18 @@ public class MediaServiceImpl implements MediaService {
 
     private final Artist artist = new ArtistRepository().getArtist();
 
+    public Long newMediaId() {
+        Set<Media> discography = artist.getDiscography();
+        Long max = 0L;
+        if (discography.size() > 0) {
+            for (Media media : discography) {
+                Long mediaId = media.getMediaId();
+                if (mediaId > max) max = mediaId;
+            }
+        }
+        return ++max;
+    }
+
     @Override
     public Long getArtistId() {
         return artist.getArtistId();
