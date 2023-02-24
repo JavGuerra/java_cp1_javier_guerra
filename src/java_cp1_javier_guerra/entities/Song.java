@@ -1,5 +1,7 @@
 package java_cp1_javier_guerra.entities;
 
+import java_cp1_javier_guerra.entities.enums.MusicGenre;
+
 import java.util.Objects;
 
 public class Song {

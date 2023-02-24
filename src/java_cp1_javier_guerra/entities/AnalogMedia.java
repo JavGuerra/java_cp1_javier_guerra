@@ -1,5 +1,7 @@
 package java_cp1_javier_guerra.entities;
 
+import java_cp1_javier_guerra.entities.enums.MediaFormat;
+
 import java.util.Set;
 
 public class AnalogMedia extends Media {

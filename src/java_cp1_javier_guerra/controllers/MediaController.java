@@ -1,15 +1,16 @@
 package java_cp1_javier_guerra.controllers;
 
 import java_cp1_javier_guerra.entities.*;
+import java_cp1_javier_guerra.entities.enums.MediaFormat;
 import java_cp1_javier_guerra.services.*;
 
 import java.util.Optional;
 import java.util.Set;
 
-import static java_cp1_javier_guerra.entities.MediaFormat.getMediaFormat;
+import static java_cp1_javier_guerra.entities.enums.MediaFormat.getMediaFormat;
 import static java_cp1_javier_guerra.utils.ConsoleInput.*;
 
-public abstract class MediaController {
+public class MediaController {
 
     private static final MediaService mediaService = new MediaServiceImpl();
 

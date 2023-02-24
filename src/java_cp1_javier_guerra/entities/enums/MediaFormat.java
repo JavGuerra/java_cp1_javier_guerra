@@ -1,4 +1,4 @@
-package java_cp1_javier_guerra.entities;
+package java_cp1_javier_guerra.entities.enums;
 
 import static java_cp1_javier_guerra.utils.ConsoleInput.getLongIntPosByRange;
 
